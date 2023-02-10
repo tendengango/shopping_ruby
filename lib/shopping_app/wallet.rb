@@ -1,4 +1,6 @@
+require_relative "Ownable"
 class Wallet
+  include Ownable
   attr_reader :balance
 
   def initialize(owner)
